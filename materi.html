@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Materi Pancasila</title>
+
+    <!-- CSS WAJIB DI ATAS -->
+    <link rel="stylesheet" href="./materi.css">
+
+    <!-- Tailwind (opsional) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- JS -->
+    <script src="materi.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ================= MATERI ================= -->
+    <div id="materi-section" class="container">
+
+        <!-- tombol kembali -->
+        <button onclick="goToPage('index.html')" class="back-btn">
+            ← Kembali
+        </button>
+
+        <!-- Judul -->
+        <h1 class="text-2xl font-bold mb-6 text-center">
+            📚 Materi Integrasi Nasional
+        </h1>
+
+        <!-- ================= MATERI CARD ================= -->
+
+        <!-- Materi 1 -->
+        <div class="materi-card" onclick="toggleMateri(1)">
+            <div class="flex justify-between items-center">
+                <div>
+                    <div class="materi-title">Pancasila sebagai Fondasi Karakter Bangsa</div>
+                    <div class="materi-sub">Bagaimana pancasila menjadi landasan dalam pembentukkan karakter</div>
+                </div>
+                <div id="arrow-1" class="arrow">▼</div>
+            </div>
+
+            <div id="content-1" class="materi-content">
+                <div class="materi-inner">
+                    Pancasila merupakan dasar negara sekaligus pandangan hidup bangsa Indonesia. Lima sila di dalamnya
+                    mengandung nilai universal yang relevan untuk membentuk karakter warga negara. Nilai religiusitas,
+                    kemanusiaan, persatuan, demokrasi, dan keadilan sosial menjadi pedoman moral yang harus
+                    diinternalisasi dalam kehidupan sehari-hari. Pendidikan kewarganegaraan berperan penting dalam
+                    mengintegrasikan nilai-nilai tersebut ke dalam proses pembelajaran, sehingga mahasiswa tidak hanya
+                    memahami konsep Pancasila secara teoritis, tetapi juga mampu mengaplikasikannya dalam sikap dan
+                    perilaku. Dengan menjadikan Pancasila sebagai fondasi, karakter bangsa yang dihasilkan akan
+                    mencerminkan identitas nasional yang kuat, berakar pada budaya sendiri, namun tetap terbuka terhadap
+                    perkembangan global.ial
+                    dalam masyarakat yang beragam menjadi satu kesatuan bangsa.
+                </div>
+            </div>
+        </div>
+
+        <!-- Materi 2 -->
+        <div class="materi-card" onclick="toggleMateri(2)">
+            <div class="flex justify-between items-center">
+                <div>
+                    <div class="materi-title">Nilai Religius dan Toleransi</div>
+                    <div class="materi-sub">Menjaga persatuan NKRI</div>
+                </div>
+                <div id="arrow-2" class="arrow">▼</div>
+            </div>
+
+            <div id="content-2" class="materi-content">
+                <div class="materi-inner">
+                    Sila pertama, Ketuhanan Yang Maha Esa, menekankan pentingnya religiusitas dan toleransi. Karakter
+                    yang terbentuk adalah pribadi yang beriman, menghargai perbedaan, dan menjunjung tinggi nilai
+                    spiritual. Dalam konteks pendidikan, integrasi nilai ini dapat dilakukan melalui pembiasaan ibadah
+                    sesuai agama masing-masing, penghormatan terhadap hari besar keagamaan, serta diskusi lintas iman
+                    yang menumbuhkan sikap saling menghargai. Mahasiswa diajak untuk memahami bahwa keberagaman agama
+                    bukanlah penghalang, melainkan kekayaan bangsa. Dengan demikian, karakter toleran dan religius dapat
+                    tumbuh, membentuk masyarakat yang harmonis dan damai.
+                </div>
+            </div>
+        </div>
+
+        <!-- Materi 3 -->
+        <div class="materi-card" onclick="toggleMateri(3)">
+            <div class="flex justify-between items-center">
+                <div>
+                    <div class="materi-title">Humanisme dan Keadilan</div>
+                    <div class="materi-sub">Pentingnya HAM</div>
+                </div>
+                <div id="arrow-3" class="arrow">▼</div>
+            </div>
+
+            <div id="content-3" class="materi-content">
+                <div class="materi-inner">
+                    Sila kedua, Kemanusiaan yang Adil dan Beradab, menekankan penghormatan terhadap martabat manusia.
+                    Karakter yang dihasilkan adalah empati, kepedulian, dan keadilan. Dalam pendidikan kewarganegaraan,
+                    nilai ini dapat diintegrasikan melalui kegiatan sosial seperti bakti masyarakat, program peduli
+                    lingkungan, dan diskusi tentang hak asasi manusia. Mahasiswa dilatih untuk peka terhadap
+                    ketidakadilan dan berani memperjuangkan hak orang lain. Humanisme yang berakar pada Pancasila
+                    membentuk generasi yang tidak hanya cerdas secara intelektual, tetapi juga memiliki hati nurani yang
+                    kuat, sehingga mampu menjadi agen perubahan sosial yang adil dan beradab.
+                </div>
+            </div>
+        </div>
+
+        <!-- Materi 4 -->
+        <div class="materi-card" onclick="toggleMateri(4)">
+            <div class="flex justify-between items-center">
+                <div>
+                    <div class="materi-title">Nasionalisme dan Demokrasi</div>
+                    <div class="materi-sub">Pentingnya memiliki rasa cinta tanah air</div>
+                </div>
+                <div id="arrow-4" class="arrow">▼</div>
+            </div>
+
+            <div id="content-4" class="materi-content">
+                <div class="materi-inner">
+                    Sila ketiga dan keempat, Persatuan Indonesia serta Kerakyatan yang Dipimpin oleh Hikmat
+                    Kebijaksanaan dalam Permusyawaratan/Perwakilan, menekankan pentingnya nasionalisme dan demokrasi.
+                    Karakter yang terbentuk adalah cinta tanah air, solidaritas, serta sikap demokratis. Integrasi nilai
+                    ini dapat dilakukan melalui kegiatan kebangsaan seperti upacara bendera, diskusi tentang sejarah
+                    perjuangan bangsa, serta simulasi musyawarah di kelas. Mahasiswa diajak untuk memahami bahwa
+                    persatuan adalah kekuatan bangsa, sementara demokrasi adalah mekanisme untuk menjaga keadilan dan
+                    kebebasan. Dengan demikian, karakter nasionalis dan demokratis dapat tumbuh seiring dengan kesadaran
+                    akan pentingnya menjaga persatuan dalam keberagaman.
+                </div>
+            </div>
+        </div>
+
+        <!-- Materi 5 -->
+        <div class="materi-card" onclick="toggleMateri(5)">
+            <div class="flex justify-between items-center">
+                <div>
+                    <div class="materi-title">Keadilan Sosial dan Tanggung Jawab</div>
+                    <div class="materi-sub">Membina rasa empati terhadap sesama masyarakat</div>
+                </div>
+                <div id="arrow-5" class="arrow">▼</div>
+            </div>
+
+            <div id="content-5" class="materi-content">
+                <div class="materi-inner">
+                    Sila kelima, Keadilan Sosial bagi Seluruh Rakyat Indonesia, menekankan pentingnya kesejahteraan
+                    bersama. Karakter yang terbentuk adalah kejujuran, tanggung jawab, dan kepedulian sosial. Dalam
+                    pendidikan, nilai ini dapat diintegrasikan melalui pembelajaran berbasis proyek yang menekankan
+                    kerja sama, pembagian tugas yang adil, serta refleksi atas dampak sosial dari setiap kegiatan.
+                    Mahasiswa dilatih untuk memahami bahwa keadilan bukan hanya konsep hukum, tetapi juga praktik
+                    sehari-hari dalam berbagi kesempatan dan sumber daya. Dengan demikian, karakter yang terbentuk
+                    adalah pribadi yang jujur, bertanggung jawab, dan peduli terhadap kesejahteraan masyarakat secara
+                    luas.
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= BUTTON QUIZ ================= -->
+        <div class="text-center mt-10">
+            <button onclick="toggleQuiz()" class="btn-open-quiz">
+                📝 Mulai Quiz
+            </button>
+        </div>
+
+        <!-- ================= QUIZ ================= -->
+        <div id="quiz-section" class="mt-10">
+
+            <h1 class="quiz-title">📝 KUIS</h1>
+
+            <!-- SCORE -->
+            <div class="score-box">
+                <div>
+                    <div class="score-label">🏆 Skor Kamu</div>
+                    <div id="score">0/0</div>
+                </div>
+                <button onclick="resetQuiz()" class="btn-reset">
+                    🔄 Ulangi
+                </button>
+            </div>
+
+            <!-- QUIZ CONTAINER -->
+            <div id="quiz-container"></div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

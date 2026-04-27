@@ -1,0 +1,274 @@
+/* =========================
+   RESET DASAR
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    color: #333;
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: orange;
+    transform: scale(1.1);
+}
+
+/* =========================
+   MATERI CARD
+========================= */
+
+#materi-section {
+    max-width: 700px;
+    /* ❗ batas lebar */
+    margin: 40px auto;
+    /* center */
+    padding: 20px;
+}
+
+.materi-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+
+    cursor: pointer;
+    transition: all 0.25s ease;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* hover lebih halus */
+.materi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   MATERI CONTENT
+========================= */
+.materi-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.materi-content.open {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+/* isi materi */
+.materi-inner {
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 12px;
+    border-left: 4px solid #f59e0b;
+    font-size: 14px;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.materi-title {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* sub text */
+.materi-sub {
+    font-size: 12px;
+    color: #777;
+}
+
+.arrow {
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+button {
+    cursor: pointer;
+}
+
+.btn-open-quiz,
+.btn-check {
+    background: linear-gradient(to right, #f59e0b, #fbbf24);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.btn-open-quiz:hover,
+.btn-check:hover {
+    transform: scale(1.05);
+}
+
+.btn-reset {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 12px;
+}
+
+.btn-reset:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   QUIZ SECTION
+========================= */
+#quiz-section {
+    max-width: 700px;
+    margin: 40px auto;
+
+    opacity: 0;
+    transform: translateY(30px);
+
+    max-height: 0;
+    overflow: hidden;
+
+    transition: all 0.5s ease;
+}
+
+/* saat aktif */
+#quiz-section.show {
+    opacity: 1;
+    transform: translateY(0);
+
+    max-height: none;
+    /* ✅ FIX UTAMA */
+}
+
+/* =========================
+   SCORE BOX
+========================= */
+.score-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: white;
+    padding: 15px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   QUIZ CARD
+========================= */
+.quiz-card {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    animation: fadeInUp 0.4s ease;
+}
+
+.question-number {
+    background: orange;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================
+   OPTIONS
+========================= */
+.option {
+    padding: 12px;
+    border-radius: 12px;
+    margin: 8px 0;
+    background: #e5e7eb;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.option:hover {
+    transform: scale(1.02);
+}
+
+.option.selected {
+    border: 2px solid orange;
+}
+
+.correct {
+    background: #22c55e !important;
+    color: white;
+}
+
+.wrong {
+    background: #ef4444 !important;
+    color: white;
+}
+
+/* =========================
+   FEEDBACK
+========================= */
+.feedback {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.feedback.correct {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.feedback.wrong {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

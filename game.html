@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <audio id="bgm" loop>
+        <source src="assets/audio/game.mp3" type="audio/mp3">
+    </audio>
+    <a href="index.html" class="back-btn">⬅ Kembali ke Menu</a>
+
+    <div id="game">
+
+        <!-- Background -->
+        <div id="background"></div>
+
+        <!-- Karakter -->
+        <img id="char-left" class="character" />
+        <img id="char-right" class="character" />
+
+        <!-- UI VN -->
+        <div id="vn-ui">
+
+            <!-- Dialog Box -->
+            <div id="dialog-box">
+
+                <!-- Nama -->
+                <div id="name-box">
+                    <span id="name"></span>
+                </div>
+
+                <!-- Text -->
+                <p id="text"></p>
+
+                <!-- Next Indicator -->
+                <div id="next-indicator">▶</div>
+
+                <!-- Choices -->
+                <div id="choices"></div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="fade"></div>
+
+    <div id="fade"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
