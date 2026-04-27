@@ -497,3 +497,12 @@ function playVideo(src) {
     AudioManager.playSFX("assets/audio/click.mp3");
 }
 
+document.addEventListener("click", () => {
+    AudioManager.unlockAudio();
+});
+
+document.addEventListener("click", () => {
+    if (!AudioManager.bgm) return;
+
+    AudioManager.bgm.play().catch(() => {});
+});
