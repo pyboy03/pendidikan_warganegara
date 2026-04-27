@@ -70,10 +70,10 @@ window.addEventListener("load", () => {
     const page = window.location.pathname;
 
     if (page.includes("index")) {
-        AudioManager.playBGM("assets/audio/menu.mp3");
+        AudioManager.playBGM("/pendidikan_warganegara/assets/audio/menu.mp3");
     }
     else if (page.includes("game")) {
-        AudioManager.playBGM("assets/audio/game.mp3");
+        AudioManager.playBGM("/pendidikan_warganegara/assets/audio/game.mp3");
     }
     else if (page.includes("materi")) {
         AudioManager.playBGM("assets/audio/materi.mp3");
