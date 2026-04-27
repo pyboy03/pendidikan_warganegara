@@ -66,21 +66,27 @@ document.addEventListener("click", () => {
     }
 });
 
-window.addEventListener("load", () => {
+document.addEventListener("click", () => {
+
+    // unlock audio
+    AudioManager.unlockAudio();
+
+    // baru play BGM setelah user klik
     const page = window.location.pathname;
 
     if (page.includes("index")) {
-        AudioManager.playBGM("/pendidikan_warganegara/assets/audio/menu.mp3");
+        AudioManager.playBGM("assets/audio/menu.mp3");
     }
     else if (page.includes("game")) {
-        AudioManager.playBGM("/pendidikan_warganegara/assets/audio/game.mp3");
+        AudioManager.playBGM("assets/audio/game.mp3");
     }
     else if (page.includes("materi")) {
-        AudioManager.playBGM("/pendidikan_warganegara/assets/audio/materi.mp3");
+        AudioManager.playBGM("assets/audio/materi.mp3");
     }
     else if (page.includes("video")) {
-        AudioManager.playBGM("/pendidikan_warganegara/assets/audio/video.mp3");
+        AudioManager.playBGM("assets/audio/video.mp3");
     }
+
 });
 
 function goToPage(page) {
