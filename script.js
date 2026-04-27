@@ -497,4 +497,3 @@ function playVideo(src) {
     AudioManager.playSFX("assets/audio/click.mp3");
 }
 
-
