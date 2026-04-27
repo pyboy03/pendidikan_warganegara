@@ -76,10 +76,10 @@ window.addEventListener("load", () => {
         AudioManager.playBGM("/pendidikan_warganegara/assets/audio/game.mp3");
     }
     else if (page.includes("materi")) {
-        AudioManager.playBGM("assets/audio/materi.mp3");
+        AudioManager.playBGM("/pendidikan_warganegara/assets/audio/materi.mp3");
     }
     else if (page.includes("video")) {
-        AudioManager.playBGM("assets/audio/video.mp3");
+        AudioManager.playBGM("/pendidikan_warganegara/assets/audio/video.mp3");
     }
 });
 
