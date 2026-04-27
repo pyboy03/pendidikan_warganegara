@@ -66,12 +66,7 @@ document.addEventListener("click", () => {
     }
 });
 
-document.addEventListener("click", () => {
-
-    // unlock audio
-    AudioManager.unlockAudio();
-
-    // baru play BGM setelah user klik
+window.addEventListener("load", () => {
     const page = window.location.pathname;
 
     if (page.includes("index")) {
@@ -86,7 +81,6 @@ document.addEventListener("click", () => {
     else if (page.includes("video")) {
         AudioManager.playBGM("assets/audio/video.mp3");
     }
-
 });
 
 function goToPage(page) {
