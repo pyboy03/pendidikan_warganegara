@@ -193,8 +193,37 @@ const quizData = [
         question: "Kegiatan gotong royong mencerminkan sila…",
         options: ["Ketiga", "Kelima", "Pertama", "Kedua"],
         answer: 0
-    }
+    },
 
+    {
+        question: "Diskusi lintas iman di kampus mencerminkan sila…",
+        options: ["Ketiga", "Kelima", "Pertama", "Kedua"],
+        answer: 2
+    },
+
+    {
+        question: "Simulasi musyawarah di kelas mencerminkan sila…",
+        options: ["Ketiga", "Kelima", "Pertama", "Keempat"],
+        answer: 3
+    },
+
+    {
+        question: "Program peduli lingkungan mencerminkan sila…",
+        options: ["Ketiga", "Kelima", "Pertama", "Kedua"],
+        answer: 3
+    },
+
+    {
+        question: "Upacara bendera menumbuhkan karakter…",
+        options: ["Religius", "Demokratis", "Nasionalis", "Humanis"],
+        answer: 2
+    },
+
+    {
+        question: "Menghormati hak orang lain mencerminkan sila…",
+        options: ["Ketiga", "Kelima", "Pertama", "Kedua"],
+        answer: 3
+    }
 
 
 ];
